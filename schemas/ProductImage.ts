@@ -15,14 +15,14 @@ export const ProductImage = list({
       cloudinary,
       label: 'Source',
     }),
-    alText: text(),
+    altText: text(),
     product: relationship({
       ref: 'Product.photo',
     }),
   },
   ui: {
     listView: {
-      initialColumns: ['image', 'alText', 'product'],
+      initialColumns: ['image', 'altText', 'product'],
     },
   },
 });
